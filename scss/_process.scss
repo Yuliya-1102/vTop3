@@ -1,0 +1,115 @@
+.process {
+    background: $accent-color-4;
+
+    &__container {
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 4.2rem;
+    }
+
+    &__wrapper {
+        width: 49.125rem; 
+        margin-top: 1.8rem;
+    }
+
+    &__title {
+        color: $title-color-1;
+        font-size: 4.375rem;
+        font-weight: 700;
+        margin-bottom: 3.13rem;
+    }
+
+    &__item-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    &__item-subtitle {
+        color: $title-color-1;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    &__item-text {
+        font-size: 1.5rem;
+    }
+
+    &__img {
+        width: 59.0625rem;
+        height: 59.0625rem; 
+    }
+}
+
+@media (max-width:768px) {
+    .process {
+        &__container {
+            margin-left: 0.5rem;
+            max-width: 48rem;
+            align-items: flex-start;
+        }
+        &__wrapper {
+            width: 23rem;
+            margin-top: 4.2rem;
+          }
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 1.713rem;
+        }
+        &__item-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.3rem;
+        }
+        &__item-subtitle {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+        }
+        &__item-text {
+            font-size: 1rem;
+        }
+        &__img {
+            width: 24rem;
+            height: 22.7188rem;      
+        }
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .process {
+        padding-top: 1.87rem;
+        &__container {
+            display: block;
+        }
+        &__wrapper {
+            width: 100%;
+            margin-top: 0rem;
+        }
+        &__container {
+            max-width: 18.5rem;
+            margin: 0 auto;
+    }
+        &__title {
+            font-size: 1.75rem; 
+            margin-bottom: 0.513rem;
+
+        }
+        &__item-title {
+            font-size: 1.5rem; 
+            margin-bottom: 0.75rem;
+        }
+        &__item-subtitle {
+            margin-bottom: 0.69rem;
+        }
+        &__img {
+            width: 100%;
+            height: 18.25rem; 
+            margin-top: 1.8rem;
+
+        }
+    }
+}
+
+
+

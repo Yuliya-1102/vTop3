@@ -1,0 +1,274 @@
+.header {
+    background: url('../img/menu_bg.svg') center center no-repeat #4D3F75;
+    border-radius: 0 0 50px 50px;
+    padding: 0 0 1.89rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    
+    &__top {
+        position: relative;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 0.64rem;
+        padding-top: 1.7rem;
+        padding-bottom: 1.5rem;
+    }
+    &__logo {
+        position: absolute;
+        top: -0.1rem;
+        left: 0;
+    }
+    &__logo-bg {
+        width: 21rem;
+        height: 5rem;
+        background: url('../img/logo-bg.png') center no-repeat;
+        background-size: contain;
+    }
+    &__logo-img {
+        width: 8.93731rem;
+        height: 2.868rem; 
+        position: absolute;
+        top: 42%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__phone, &__email {
+        align-items: center;
+        color: #FFF;
+        font-family: Yantramanav;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.0375rem;
+    }
+    &__phone-img {
+        width: 1.25rem;
+        height: 1.28381rem; 
+    }
+    &__email-img {
+        width: 1.25rem;
+        height: 0.88263rem; 
+    }
+    &__email {
+        margin-left: 1.86rem;
+    }
+    &__lang {
+        position: relative;
+        padding-right: 0.8rem;
+        margin-left: 3.06rem;
+        cursor: pointer;
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.5rem;
+            height: 0.5rem; 
+            background: url('../img/polygon-lang.svg') center no-repeat;
+            background-size: contain;
+        }
+    }
+    &__lang-ru {
+        color: #D2D2D2;
+        font-family: Raleway;
+        font-size: 0.875rem;
+    }
+    &__lang-main {
+        align-items: center;
+    }
+    &__lang-img {
+        width: 1.875rem;
+        height: 1.875rem; 
+    }
+    &__phone-link, &__email-link, &__lang-img {
+        margin-left: 0.5rem;
+    }
+    &__line {
+        position: absolute;
+        width: 93.375rem; 
+        top: 4.38rem;
+        right: 7.62rem;
+    }
+
+    // mobile
+    &__burger {
+        display: none;
+        position: absolute;
+        top: 1rem;
+        left: 0.8rem;
+        width: 2.4935rem;
+        height: 2.5rem;
+        flex-shrink: 0; 
+        background: #665A87;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__mobile-circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        flex-shrink: 0; 
+        background: #665A87;
+        border-radius: 50%;
+        cursor: pointer;
+        img {
+            width: 1.5rem;
+            height: auto;
+        }
+    }
+
+    &__phone-mobile, &__email-mobile {
+        display: none;
+    }
+}
+
+.header__nav {
+    &-list {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-link {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 1rem;
+        &.active {
+            font-weight: 700; 
+        }
+       
+    }
+}
+
+.header__nav-link:not(.link__decoration) {
+    position: relative;
+    padding-right: 0.8rem;
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.5rem;
+        height: 0.5rem; 
+        background: url('../img/polygon.svg') center no-repeat;
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        padding-bottom: 0;
+        &__line {
+            display: none;
+        }
+        &__nav {
+            display: none;
+        }
+        &__phone{
+            display: none;
+        }
+        &__email {
+            display: none;
+        }
+        &__burger {
+            display: block;
+        }
+        &__phone-mobile, &__email-mobile {
+            display: block;
+        }
+        &__lang {
+            margin-left: 1.037rem;
+        }
+        &__email-mobile {
+            margin-left: 0.81rem;
+        }
+        &__logo-bg {
+            width: 17.32988rem;
+            height: 3.75rem; 
+        }
+        &__logo {
+            left: 4.8rem;
+        }
+        &__top {
+            padding-top: 1rem;
+        }
+        &__logo-img {
+            width: 7.60137rem;
+            height: auto;
+            position: absolute;
+            top: 36%;
+            left: 49%;
+        }
+        &__lang::after {
+            top: 50%;
+        }
+        &__contact {
+            align-items: center;
+        }
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 0;
+        border-radius: 0 0 33px 33px;
+        &__burger {
+            width: 2.125rem;
+            height: 2.125rem; 
+            top: 0.5rem;
+            left: 0.12rem;
+        }
+        &__logo-bg {
+            width: 8.65088rem;
+            height: 2.24444rem; 
+        }
+        &__logo {
+            left: 2.2rem;
+            top: -0.2rem;
+        }  
+        &__logo-img {
+            width: 4.601rem;
+            height: auto;
+            top: 41%;
+            left: 52%;
+        }
+        &__mobile-circle {
+            width: 2.25rem;
+            height: 2.25rem; 
+        }
+        &__mobile-circle img {
+            width: 1.4rem;
+            height: auto;
+        }
+        &__lang-ru {
+            display: none;
+           }
+        &__lang-img {
+            width: 1.6875rem;
+            height: 1.25rem; 
+        }
+        &__top {
+            padding-top: 0.5rem;
+            padding-bottom: 0.81rem;
+        } 
+        &__lang::after {
+            width: 0.3rem;
+            height: 0.3rem;
+        }
+        &__lang {
+            padding-right: 0.2rem;
+            margin-left: 0.037rem;
+        }
+        &__email-mobile {
+            margin-left: 0.50rem;
+        }          
+    }
+}
+
+
+

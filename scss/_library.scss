@@ -1,0 +1,115 @@
+$main-color: #fff;
+// bg
+$accent-color-1: #4D3F75;
+$accent-color-2: #340738;
+$accent-color-3: #28062C;
+$accent-color-4: #583E7A;
+// text
+$title-color-1: #F3BC28; 
+$title-color-2: #F6A21E; 
+$title-color-3: #F1CA2D; 
+// button
+$btn-text-color: #000;
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+	font-size: 0.8335vw;
+}
+
+body, html {
+    min-width: 320px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    color: $main-color;
+    box-sizing: border-box;
+    line-height: normal;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: -8.7rem;
+}
+
+.main-btn {
+    border-radius: 3.125rem;
+    background: linear-gradient(180deg, #F1CA2D 0%, #F6A21E 100%);
+    padding: 1.5rem 4.12rem;
+    &__text {
+        color: $btn-text-color;
+        font-family: Raleway;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+}
+
+
+.container {
+    max-width: 112.4375rem;
+    margin: 0 auto;
+}
+
+.main__container {
+    max-width: 102.7rem;
+    margin-left: 4.2rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.link__decoration {
+    text-decoration-line: underline; 
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 2.125vw;
+    }
+    .container {
+        max-width: 46rem;
+        margin: 0 auto;
+    }
+    .main__container {
+        max-width: 45rem;
+        margin-left: 0.5rem;
+    }
+    .main-btn__text {
+        font-size: 0.8125rem;
+    }
+    .main-btn {
+        padding: 1rem 2.0rem;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 5.125vw;
+    }
+    .container {
+        max-width: 18.5rem;
+    }
+
+    .main__container {
+        max-width: 18.3rem;
+        margin-left: 0.6rem;
+    }
+    .main-btn__text {
+        font-size: 0.875rem; 
+    }
+    .main-btn {
+        padding-top: 0.62rem;
+        padding-bottom: 0.56rem;
+    }
+}

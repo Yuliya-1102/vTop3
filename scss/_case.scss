@@ -1,0 +1,383 @@
+.cases {
+    padding-top: 6.525rem;
+    padding-bottom: 6.06rem;
+    background: $accent-color-3;
+
+    &__title {
+        color: $title-color-1;
+        font-size: 4.375rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        line-height: 103%;
+    }
+    &__subtitle{
+        font-size: 3.5rem;
+    }
+    &__text{
+        font-size: 1.875rem; 
+        margin-bottom: 3.13rem;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 2.25rem;
+    }
+
+    &__logo {
+        grid-column: span 10;
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 2.25rem;
+    }
+
+    &__logo-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 1.88rem;
+        row-gap: 1.88rem;
+    }
+
+    &__logo-item {
+        position: relative;
+        grid-column: span 1;
+        overflow: hidden;
+
+        &:nth-child(1){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        &:nth-child(6){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        &:nth-child(8){
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        &:nth-child(12){
+            display: none;
+        }
+    }
+
+    &__logo-bg{
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        top: 0;
+        right: -50%;
+        background: rgba(255, 255, 255, 0.70);
+        width: 50%;
+        height: 100%;
+        padding: 0 0.5rem 0.44rem 0.94rem;
+        transition: all 0.5s ease-in-out;
+        z-index: 100;
+    }
+    &__logo-text{
+        text-align: left;
+        color: #000;
+        font-size: 0.875rem; 
+        font-weight: 700;
+    }
+
+    &__descr {
+        grid-column: 11 / 2 span;
+    }
+
+    &__descr-item {
+        margin-bottom: 1.88rem;
+    }
+
+    &__descr-title {
+        margin-bottom: 1.94rem;
+        font-size: 1.875rem;
+    }
+
+    &__descr-text {
+        font-size: 4.125rem;
+        font-weight: 700;
+    }
+    &__descr-color {
+        color: $title-color-1;
+    }
+    &__descr-btn {
+        margin-top: 2rem;
+        padding: 1.7rem 3.912rem;
+    }
+    &__btn {
+        border-radius: 3.125rem; 
+        margin-top: 3rem;
+        margin-left: 19rem;
+        padding: 1.5rem 5.612rem;
+    }
+}
+
+.cases__logo-item:hover .cases__logo-bg {
+    right: 0;
+}
+
+.cases__logo-item {
+    &:nth-child(1) .cases__logo-text{
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    &:nth-child(6) .cases__logo-text{
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    &:nth-child(8) .cases__logo-text{
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}
+
+.cases__logo-item {
+    &:nth-child(1) .cases__logo-bg{
+        padding: 0 2.34rem 2.31rem 2.06rem;
+    }
+    &:nth-child(6) .cases__logo-bg{
+        padding: 0 2.34rem 2.31rem 2.06rem;
+
+    }
+    &:nth-child(8) .cases__logo-bg{
+        padding: 0 2.34rem 2.31rem 2.06rem;
+    }
+}
+
+@media (max-width:768px) {
+    .cases {
+        padding-top: 3.353rem;
+        padding-bottom: 3.06rem;
+        &__wrapper {
+            column-gap: 1.81rem;
+        }
+        &__title {
+            font-size: 2rem; 
+        }
+        &__subtitle {
+            font-size: 1.875rem; 
+        }
+        &__text {
+            font-size: 1.125rem; 
+            margin-bottom: 1.813rem;
+        }
+        &__logo-grid {
+            column-gap: 0.54rem;
+            row-gap: 0.54rem;
+        }
+        &__descr-title {
+            font-size: 1.125rem; 
+            margin-bottom: 0.94rem;
+        }
+        &__descr-text {
+            font-size: 2.5rem; 
+        }
+        &__logo {
+            grid-column: span 9;
+        }
+        &__descr {
+            grid-column: 10/3 span;
+        }
+        &__descr-item {
+            margin-bottom: 0.78rem;
+        }
+        &__descr-btn {
+            margin-top: 0.2rem;
+            padding: 1.1rem 1.812rem;
+        }
+        &__btn {
+            margin-top: 1.2rem;
+            margin-left: 12rem;
+            padding: 1.1rem 3.112rem;
+        }
+        &__logo-text {
+            font-size: 0.47rem;
+        }
+        &__logo-bg {
+            padding: 0 0.3rem 0.3rem 0.3rem;
+        }
+
+
+
+    }
+    .cases__logo-item {
+        &:nth-child(1) .cases__logo-text{
+            font-size: 1rem;               
+        }
+        &:nth-child(6) .cases__logo-text{
+            font-size: 1rem;               
+        }
+        &:nth-child(8) .cases__logo-text{
+            font-size: 1rem;               
+        }
+    }
+    
+    .cases__logo-item {
+        &:nth-child(1) .cases__logo-bg{
+            padding: 0 0.34rem 0.31rem 0.5rem;
+        }
+        &:nth-child(6) .cases__logo-bg{
+            padding: 0 0.34rem 0.31rem 0.5rem;
+    
+        }
+        &:nth-child(8) .cases__logo-bg{
+            padding: 0 0.34rem 0.31rem 0.5rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .cases {
+        padding-top: 3.9353rem;
+        padding-bottom: 1.706rem;
+        &__title {
+            font-size: 1.75rem; 
+            margin-bottom: 0.5rem;
+        }
+        &__subtitle{
+            font-size: 1.5rem; 
+            margin-bottom: 0.3rem;
+        }
+        &__text{
+            font-size: 1rem; 
+            margin-bottom: 1.113rem;
+        }
+        &__descr-title {
+            font-size: 1rem; 
+        }
+        &__descr-text {
+            font-size: 1.75rem; 
+        }
+        &__btn {
+            padding: 0.62rem 1.88rem;
+            margin-top: 1rem;
+            margin-left: 0rem;
+        }
+        &__descr-btn {
+            padding-left: 1.44rem;
+            padding-right: 1.44rem;
+        }
+        &__wrapper {
+            display: block;
+        }
+        &__logo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+        }
+        &__logo-item{
+            &:nth-child(1){
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            &:nth-child(5){
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            &:nth-child(7){
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            &:nth-child(6){
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+            &:nth-child(8){
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+            &:nth-child(12){
+                display: block;
+            }
+            &:nth-child(11){
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+            
+        }
+        &__logo-text {
+            font-size: 0.375rem;
+        }
+        &__logo {
+            padding-bottom: 1rem;
+        }
+        &__logo-bg {
+            padding: 0 0.3rem 0.3rem 0.3rem;
+        }
+        &__logo-grid {
+            column-gap: 0.47rem;
+            row-gap: 0.47rem;
+        }
+        &__descr {
+            text-align: center;
+        }
+        &__descr-title {
+            margin-bottom: 0.2rem;
+        }
+        &__descr-btn {
+            padding-left: 1.44rem;
+            padding-right: 1.44rem;
+            padding-top: 0.62rem;
+            padding-bottom: 0.56rem;
+            margin-top: -0.2rem;
+        }
+
+
+    }
+
+    .cases__logo-item {
+        &:nth-child(1) .cases__logo-text{
+            font-size: 0.5rem;              
+        }
+        &:nth-child(5) .cases__logo-text{
+            font-size: 0.5rem;             
+        }
+        &:nth-child(7) .cases__logo-text{
+            font-size: 0.5rem;            
+        }
+        &:nth-child(6) .cases__logo-text{
+            font-size: 0.375rem;  
+        }
+        &:nth-child(8) .cases__logo-text{
+            font-size: 0.375rem;  
+        }
+        &:nth-child(11) .cases__logo-text{
+            font-size: 0.5rem; 
+        }
+    }
+    
+    .cases__logo-item {
+        &:nth-child(1) .cases__logo-bg{
+            padding: 0 0.44rem 0.45rem 0.47rem;
+        }
+        &:nth-child(5) .cases__logo-bg{
+            padding: 0 0.44rem 0.45rem 0.47rem;
+    
+        }
+        &:nth-child(7) .cases__logo-bg{
+            padding: 0 0.44rem 0.45rem 0.47rem;
+        }
+        &:nth-child(6) .cases__logo-bg{
+            padding: 0 0.3rem 0.3rem 0.3rem;
+        }
+        &:nth-child(8) .cases__logo-bg{
+            padding: 0 0.3rem 0.3rem 0.3rem;
+        }
+        &:nth-child(11) .cases__logo-bg{
+            padding: 0 0.44rem 0.45rem 0.47rem;
+        }
+    }
+}
+
+
+
+

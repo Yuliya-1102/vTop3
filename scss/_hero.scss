@@ -1,0 +1,247 @@
+#test {overflow: hidden; }
+#test img { animation: none 2s linear forwards; }
+
+@keyframes img-in {
+    0% { filter: grayscale(100%); opacity: 0; transform: scale(1.05); }
+    50% { filter: grayscale(100%); opacity: 1; transform: scale(1); }
+    100% { filter: grayscale(0); }}
+@keyframes img-out {
+    0% { filter: grayscale(0); opacity: 1; transform: scale(1); }
+    30% { filter: grayscale(100%); }
+    100% { filter: grayscale(100%); opacity: 0; transform: scale(1.05); }}
+
+
+.hero {
+    padding-top: 9rem;
+    background: $accent-color-2;
+    overflow: hidden;
+    &__wrapper {
+        align-items: start;
+        justify-content: space-between;
+        padding-top: 6rem;
+    }
+
+    &__descr {
+        flex: 0 0 60rem;
+    }
+
+    &__title {
+        font-size: 6.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 85%; /* 5.3125rem */
+        padding-bottom: 1.8rem;
+    }
+
+    &__title-color {
+        display: inline-block;
+        color: #F3BC28;
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+        color: $title-color-3;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.8rem;
+    }
+
+    &__btn {
+        border-radius: 1.875rem; 
+        margin-top: 1rem;
+    }
+    &__slider-container{
+        position: relative;
+        margin-top: -3rem;
+        flex: 0 0 33rem;
+    }
+}
+
+.hero__team {
+    position: relative;
+    flex: 0 0 32rem;
+    height: 43.97363rem; 
+    margin-bottom: -3.2809rem;
+    &-circle {
+        position: absolute;
+        left: 0;
+        top: 0rem;
+        width: 30.9375rem;
+        height: 30.9375rem; 
+    }
+    &-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -3rem;
+        left: -3rem;
+    }
+    &-img {
+        min-height: 43.97363rem; 
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        object-fit: contain;
+        z-index: 1;
+        animation: fade 5s linear infinite;
+        animation-delay: 2.5s;
+        
+    }
+    &-name {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 3.8rem;
+        left: 0rem;
+        color: $title-color-3;
+        font-size: 1.25rem;
+        z-index: 100;
+        
+    }
+    &-color {
+        color: $main-color;
+        font-size: 1.25rem;
+        margin-top: 0.3rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .hero {
+        padding-top: 5.4rem;
+        padding-bottom: 0rem;
+        margin-bottom: -2.105rem;
+        &__descr {
+            flex: 0 0 26rem;
+        }
+        &__title {
+            font-size: 2.25rem;
+            padding-bottom: 1.3rem;
+        }
+        &__title-color {
+            padding-bottom: 1rem;
+            padding-top: 0.7rem;
+            font-size: 2rem;
+        }
+        &__subtitle {
+            font-size: 1.26rem;
+            margin-bottom: 0.2rem;
+        }
+        &__btn {
+            border-radius: 1.875rem;
+            margin-top: 0.7rem;
+        }
+        &__team-img {
+            min-height: 0;
+            height: 100%;
+            width: 100%;
+        }
+        &__team-circle {
+            left: 0;
+            top: 0rem;
+            width: 16rem;
+            height: 16rem;
+        }
+        &__team {
+            flex: 0 0 16rem;
+            height: 22.2983rem;
+            margin-bottom: 0;
+        }
+        &__team-item {
+            top: -2.08rem;
+            left: -1rem;
+            height: 100%; 
+        }
+        &__team-name {
+            bottom: 1.5rem;
+            font-size: 0.725rem;
+            left: -2rem;
+        }
+        &__team-color {
+            color: #fff;
+            font-size: 0.725rem;
+            margin-top: 0.3rem;
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        background: $accent-color-3;
+        &__wrapper {
+            flex-direction: column;
+            align-items: normal;
+            padding-top: 3.7rem;
+            margin-right: -0.6rem;
+            margin-left: -0.6rem;
+
+        }
+        &__descr {
+            order: 2;
+            flex: 0 0 auto;
+        }
+       &__descr-contain {
+            background: $accent-color-2;
+            padding: 1.525rem 0.6rem 1.2rem;
+        }
+        &__team-circle {
+            width: 8.31056rem;
+            height: 8.26669rem; 
+            left: 55%;
+            transform: translateX(-50%);
+        }
+        &__team {
+            flex: 0 0 11.4rem;
+            height: auto;
+            margin-bottom: -0.7rem;
+        }
+        &__team-item {
+            top: -0.68rem;
+            left: 0rem;
+        } 
+        &__team-img {
+            left: 0.5rem;
+            bottom: 0;
+        }
+        &__team-name {
+            bottom: 1.4rem;
+            left: 3.9rem;
+            font-size: 0.5rem; 
+        }
+        &__team-color {
+            color: #fff;
+            font-size: 0.5rem;
+            margin-top: 0.3rem;
+        }
+        &__title {
+            font-size: 1.875rem; 
+            padding-bottom: 0.9rem;
+        }
+        &__title-color {
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            font-size: 1.5rem; 
+        }
+        &__subtitle {
+            font-size: 1rem; 
+            margin-bottom: 0.2rem;
+        }
+        &__subtitle-last {
+            padding-right: 5rem;
+        }
+        &__btn {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+
+
+

@@ -7,15 +7,15 @@ var swiper = new Swiper(".process__swiper", {
     },
     loop: true,
     autoHeight: true,
-  //   breakpoints: {
-	// 	576: {
-	// 		autoHeight: true,
-	// 	},
-  //       600: {
-	// 		autoHeight: false,
-	// 	}
+    breakpoints: {
+		576: {
+			autoHeight: true,
+		},
+        600: {
+			autoHeight: false,
+		}
 
-	// },
+	},
 });
 
 // animation
@@ -57,3 +57,11 @@ initImg('#test img', [
         this.change(); 
     }
   }
+
+  // burger
+  const headerBurger = document.querySelector('.header__burger');
+  const headerNav = document.querySelector('.header__nav');
+  
+  headerBurger.addEventListener('click', () =>{
+      headerNav.classList.toggle('burger--active');
+  })

@@ -410,9 +410,6 @@ main {
   .header__line {
     display: none;
   }
-  .header__nav {
-    display: none;
-  }
   .header__phone {
     display: none;
   }
@@ -455,6 +452,58 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .header__nav {
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    background: #4D3F76;
+    border-radius: 0 30px 30px 30px;
+    font-size: 0.9rem;
+    padding: 0px 25px 15px 25px;
+    min-width: 320px;
+    border: 3px solid yellow;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: yellow;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-width: 3px;
+    border-right-width: 3px;
+    border-right: none;
+    border-image-slice: 32 27 27 27;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("../img/border-sub-menu.png");
+  }
+  .header__nav.burger--active {
+    will-change: transform;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  .header__nav-list {
+    display: block;
+  }
+  .header__nav-item {
+    margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 576px) {
@@ -511,6 +560,13 @@ main {
   }
   .header__email-mobile {
     margin-left: 0.5rem;
+  }
+  .header__nav {
+    top: 3rem;
+    left: 0.5rem;
+  }
+  .header__nav-link {
+    font-size: 0.8rem;
   }
 }
 #test {

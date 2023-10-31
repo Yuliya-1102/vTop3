@@ -165,9 +165,7 @@
         &__line {
             display: none;
         }
-        &__nav {
-            display: none;
-        }
+        
         &__phone{
             display: none;
         }
@@ -208,6 +206,52 @@
         }
         &__contact {
             align-items: center;
+        }
+
+        // menu
+        &__nav {
+            transform: scaleY(0);
+            position: absolute;
+            top: 4rem;
+            left: 1rem;
+            background: #4D3F76;
+            border-radius: 0 30px 30px 30px;
+            font-size: .9rem;
+            padding: 0px 25px 15px 25px;
+            min-width: 320px;
+            border: 3px solid yellow;
+            border-top-width: 3px;
+            border-right-width: 3px;
+            border-right-style: solid;
+            border-right-color: yellow;
+            border-bottom-width: 3px;
+            border-left-width: 3px;
+            border-image-outset: 0;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-width: 3px;
+            border-right-width: 3px;
+            border-right: none;
+            border-image-slice: 32 27 27 27;
+            border-image-width: 20px 20px 20px 20px;
+            border-image-outset: 0px 0px 0px 0px;
+            border-image-repeat: stretch stretch;
+            border-image-source: url('../img/border-sub-menu.png');
+        }
+
+        &__nav.burger--active{
+            will-change: transform;
+            transition: transform 0.3s;
+            transform: scaleY(1);
+            transform-origin: 50% 0;
+        }
+        &__nav-list {
+            display: block;
+        }
+        &__nav-item {
+            margin-bottom: 0.5rem;
         }
         
     }
@@ -266,7 +310,14 @@
         }
         &__email-mobile {
             margin-left: 0.50rem;
-        }          
+        }    
+        &__nav {
+            top: 3rem;
+            left: 0.5rem;
+        }    
+        &__nav-link {
+            font-size: .8rem;
+        }  
     }
 }
 

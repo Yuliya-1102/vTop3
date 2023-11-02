@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
     <title>vtop3.by</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+		integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="demo/default.css" />
+	<link rel="stylesheet" type="text/css" href="demo/component.css" />
+	<link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="demo/demo2.css?v=2">
+	<script src="js/modernizr.custom.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -15,9 +24,10 @@
     <header class="header">
         <div class="container main__container">
             <div class="header__top flex">
-                <div class="header__burger">
+                <!-- <div class="header__burger">
                     <img class="header__burger-img" src="img/burger.svg" alt="burger">
-                </div>
+                </div> -->
+
                 <a href="#" class="header__logo">
                     <div class="header__logo-bg">
                         <div class="header__logo-img">
@@ -72,13 +82,293 @@
                     <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">Все услуги</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение сайтов  (SEO)</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-link">Контексная реклама</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link active">Создание сайтов</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Создание сайтов</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-link">Медийнная реклама</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Разработка дизайна</a></li>
+                    <li class="header__nav-item header__nav-active">
+                        <a href="#" class="header__nav-link">Разработка дизайна</a>
+                        <div class="header__nav-parent">
+                            <ul>
+                                <li class="header__nav-child">
+                                    <a href="#">Разработка веб-дизайнав</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Редизайн сайта</a></li>
+                                        <li><a href="">Разработка дизайна лендинга</a></li>
+                                        <li><a href="">Разработка дизайна корпоративных сайтов</a></li>
+                                        <li><a href="">Разработка дизайна интернет магазина</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Разработка баннеров</a></li>
+                                <li><a href="#">Создание логотипов</a></li>
+                                <li><a href="#">Разработка дизайна визиток</a></li>
+                                <li class="header__nav-child">
+                                    <a href="#">Дизайн сувенирной продукции</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Дизайн шариковых ручек</a></li>
+                                        <li><a href="">Разработка дизайна блокнотов</a></li>
+                                        <li><a href="">Разработка дизайна календарей</a></li>
+                                     </ul>
+                                </li>
+                                <li><a href="#">Разработка меню</a></li>
+                                <li><a href="#">Разработка дизайна упаковкив</a></li>
+                                <li><a href="#">Разработка дизайна этикетки</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Разработка дизайна листовок</a></li>
+                                <li><a href="#">Дизайн фирменных бланков</a></li>
+                                <li><a href="#">Разработка дизайна буклетов</a></li>
+                                <li><a href="#">Разработка дизайна брошюр</a></li>
+                                <li><a href="#">Разработка дизайна конвертов</a></li>
+                                <li><a href="#">Разработка дизайна презентации</a></li>
+                                <li><a href="#">Дизайн фирменного стиля</a></li>
+                                <li><a href="#">Разработка бренда</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение в соц сетях (SMM)</a></li>
                     <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">О компании</a></li>
                 </ul>
             </nav>
+            <!-- <nav class="header__nav header__nav-mobile">
+                <ul class="header__nav-list flex">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">Все услуги</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение сайтов  (SEO)</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Контексная реклама</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Создание сайтов</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Медийнная реклама</a></li>
+                    <li class="header__nav-item header__nav-active">
+                        <a href="#" class="header__nav-link">Разработка дизайна</a>
+                        <div class="header__nav-parent">
+                            <ul>
+                                <li class="header__nav-child">
+                                    <a href="#">Разработка веб-дизайнав</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Редизайн сайта</a></li>
+                                        <li><a href="">Разработка дизайна лендинга</a></li>
+                                        <li><a href="">Разработка дизайна корпоративных сайтов</a></li>
+                                        <li><a href="">Разработка дизайна интернет магазина</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Разработка баннеров</a></li>
+                                <li><a href="#">Создание логотипов</a></li>
+                                <li><a href="#">Разработка дизайна визиток</a></li>
+                                <li class="header__nav-child">
+                                    <a href="#">Дизайн сувенирной продукции</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Дизайн шариковых ручек</a></li>
+                                        <li><a href="">Разработка дизайна блокнотов</a></li>
+                                        <li><a href="">Разработка дизайна календарей</a></li>
+                                     </ul>
+                                </li>
+                                <li><a href="#">Разработка меню</a></li>
+                                <li><a href="#">Разработка дизайна упаковкив</a></li>
+                                <li><a href="#">Разработка дизайна этикетки</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Разработка дизайна листовок</a></li>
+                                <li><a href="#">Дизайн фирменных бланков</a></li>
+                                <li><a href="#">Разработка дизайна буклетов</a></li>
+                                <li><a href="#">Разработка дизайна брошюр</a></li>
+                                <li><a href="#">Разработка дизайна конвертов</a></li>
+                                <li><a href="#">Разработка дизайна презентации</a></li>
+                                <li><a href="#">Дизайн фирменного стиля</a></li>
+                                <li><a href="#">Разработка бренда</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение в соц сетях (SMM)</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">О компании</a></li>
+                </ul>
+            </nav> -->
+
+            <div id="dl-menu" class="dl-menuwrapper">
+                <button class="dl-menuwrapper__btn">Открыть меню</button>
+                <ul class="dl-menu">
+                    <li>
+                        <a href="#">Продвижение сайтов (SEO)</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">Продвижение сайтов (SEO)</span>
+                            </li>
+                            <li><a href="#">Продвижение по позициям</a></li>
+                            <li>
+                                <a href="#">Продвижение по лидам</a>
+                            </li>
+                            <li>
+                                <a href="#">Продвижение по трафику</a>
+                            </li>
+                            <li>
+                                <a href="#">Продвижение сайтов в Google</a>
+                            </li>
+                            <li>
+                                <a href="#">Продвижение сайтов в Яндекс</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Контекстная реклама</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">Контекстная реклама</span>
+                            </li>
+                            <li><a href="#">Контекстная реклама с оплатой за лиды</a></li>
+                            <li><a href="#">Контекстная реклама с фиксированной оплатой</a></li>
+                            <li>
+                                <a href="#">Реклама в Яндекс.Директ</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                        <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                        <span class="dl-name">Реклама в Яндекс.Директ</span>
+                                    </li>
+                                    <li><a href="#">Настройка контекстной рекламы в Яндекс.Директ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Создание сайтов</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">Создание сайтов</span>
+                            </li>
+                            <li><a href="#">Контекстная реклама с оплатой за лиды</a></li>
+                            <li><a href="#">Контекстная реклама с фиксированной оплатой</a></li>
+                            <li>
+                                <a href="#">Реклама в Яндекс.Директ</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                        <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                        <span class="dl-name">Реклама в Яндекс.Директ</span>
+                                    </li>
+                                    <li><a href="#">Настройка контекстной рекламы в Яндекс.Директ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Медийная реклама</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">Медийная реклама</span>
+                            </li>
+                            <li><a href="#">Контекстная реклама с оплатой за лиды</a></li>
+                            <li><a href="#">Контекстная реклама с фиксированной оплатой</a></li>
+                            <li>
+                                <a href="#">Реклама в Яндекс.Директ</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                        <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                        <span class="dl-name">Реклама в Яндекс.Директ</span>
+                                    </li>
+                                    <li><a href="#">Настройка контекстной рекламы в Яндекс.Директ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Разработка дизайна</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">Разработка дизайна</span>
+                            </li>
+                            <li><a href="#">Контекстная реклама с оплатой за лиды</a></li>
+                            <li><a href="#">Контекстная реклама с фиксированной оплатой</a></li>
+                            <li>
+                                <a href="#">Реклама в Яндекс.Директ</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                        <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                        <span class="dl-name">Реклама в Яндекс.Директ</span>
+                                    </li>
+                                    <li><a href="#">Настройка контекстной рекламы в Яндекс.Директ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Продвижение в соц. сетях (SMM)</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">Продвижение (SMM)</span>
+                            </li>
+                            <li><a href="#">Контекстная реклама с оплатой за лиды</a></li>
+                            <li><a href="#">Контекстная реклама с фиксированной оплатой</a></li>
+                            <li>
+                                <a href="#">Реклама в Яндекс.Директ</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                        <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                        <span class="dl-name">Реклама в Яндекс.Директ</span>
+                                    </li>
+                                    <li><a href="#">Настройка контекстной рекламы в Яндекс.Директ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Портфолио</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">Портфолио компании</span>
+                            </li>
+                            <li><a href="#">Контекстная реклама с оплатой за лиды</a></li>
+                            <li><a href="#">Контекстная реклама с фиксированной оплатой</a></li>
+                            <li>
+                                <a href="#">Реклама в Яндекс.Директ</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                        <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                        <span class="dl-name">Реклама в Яндекс.Директ</span>
+                                    </li>
+                                    <li><a href="#">Настройка контекстной рекламы в Яндекс.Директ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">О компании</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back">
+                                <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                <span class="dl-name">О компании</span>
+                            </li>
+                            <li><a href="#">Контекстная реклама с оплатой за лиды</a></li>
+                            <li><a href="#">Контекстная реклама с фиксированной оплатой</a></li>
+                            <li>
+                                <a href="#">Реклама в Яндекс.Директ</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back">
+                                        <a href="#"><img src="img/icon_back.png" alt=""></a>
+                                        <a class="dl-close" href="#"><img src="img/icon_cross.png" alt=""></a>
+                                        <span class="dl-name">Реклама в Яндекс.Директ</span>
+                                    </li>
+                                    <li><a href="#">Настройка контекстной рекламы в Яндекс.Директ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /dl-menuwrapper -->
         </div>
         <!-- container -->
     </header>
@@ -240,9 +530,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="process__img">
+                <!-- <div class="process__img">
                     <img src="img/process.png" alt="process">
-                </div>
+                </div> -->
+                <a href="https://youtu.be/qKXvYhIFQAY?si=Pr_Q14R7FLCnH47M" class="process__video process--third" data-fancybox="video">
+                    <img loading="lazy" src="img/process.png" alt="">
+                    <div class="process__play flex">
+                        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.89401 0.378465C1.63026 -0.352273 0.598633 0.249511 0.598633 1.71099V12.5087C0.598633 13.9702 1.63026 14.572 2.90261 13.8412L12.342 8.42518C13.6144 7.69444 13.6144 6.51666 12.342 5.78592L2.89401 0.378465Z" />
+                        </svg>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -281,6 +579,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+		integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/jquery.dlmenu.js"></script>
+    <script>
+        $(function() {
+            $( '#dl-menu' ).dlmenu();
+        });
+    </script>
+
     <script src="js/script.js"></script>
 
 </body>

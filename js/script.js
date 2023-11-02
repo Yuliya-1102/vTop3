@@ -59,9 +59,29 @@ initImg('#test img', [
   }
 
   // burger
-  const headerBurger = document.querySelector('.header__burger');
-  const headerNav = document.querySelector('.header__nav');
+  // const headerBurger = document.querySelector('.header__burger');
+  // const headerNav = document.querySelector('.header__nav-mobile');
+  // console.log('headerNav: ', headerNav);
   
-  headerBurger.addEventListener('click', () =>{
-      headerNav.classList.toggle('burger--active');
+  // headerBurger.addEventListener('click', () =>{
+  //     headerNav.classList.toggle('burger--active');
+  // })
+
+  // menu
+  const dlClose = document.querySelectorAll('.dl-close');
+  const menuwrapper = document.querySelector('.dl-menu');
+  const dlMenuwrapperBtn = document.querySelector('.dl-menuwrapper__btn');
+  
+
+  dlClose.forEach((item) => {
+    item.addEventListener('click', () => {
+      menuwrapper.classList.remove('dl-menuopen');
+      dlMenuwrapperBtn.classList.remove('dl-active');
+      menuwrapper.classList.add('dl-menu-toggle');
+    })
   })
+
+
+  // his.$menu.removeClass( 'dl-menuopen' );
+  // this.$menu.addClass( 'dl-menu-toggle' );
+  // this.$trigger.removeClass( 'dl-active' );

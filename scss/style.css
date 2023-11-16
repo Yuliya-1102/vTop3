@@ -292,6 +292,7 @@ main {
   position: relative;
   padding-right: 0.8rem;
   margin-left: 3.06rem;
+  width: 4.6rem;
   cursor: pointer;
 }
 .header__lang::after {
@@ -307,7 +308,11 @@ main {
   background: url("../img/polygon-lang.svg") center no-repeat;
   background-size: contain;
 }
-.header__lang-ru {
+.header__lang:hover .header__lang-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.header__lang-name {
   color: #D2D2D2;
   font-family: Raleway;
   font-size: 0.875rem;
@@ -320,6 +325,48 @@ main {
 .header__lang-img {
   width: 1.875rem;
   height: 1.875rem;
+}
+.header__lang-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 94%;
+  left: -0.8rem;
+  background: #4d3f75;
+  z-index: 1000;
+  list-style-type: none;
+  padding: 1rem;
+  min-width: 80px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 1px 0px #4d3f75;
+          box-shadow: 2px 2px 1px 0px #4d3f75;
+}
+.header__lang-item--main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.header__lang-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+.header__lang-item:hover .header__lang-name {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-text-stroke: 1px white;
+}
+.header__lang-item img {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-left: 0.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header__phone-link, .header__email-link, .header__lang-img {
   margin-left: 0.5rem;
@@ -627,7 +674,7 @@ main {
     width: 1.4rem;
     height: auto;
   }
-  .header__lang-ru {
+  .header__lang-name--main {
     display: none;
   }
   .header__lang-img {
@@ -638,13 +685,30 @@ main {
     padding-top: 0.5rem;
     padding-bottom: 0.81rem;
   }
+  .header__lang-menu {
+    padding: 0.4rem;
+  }
   .header__lang::after {
     width: 0.3rem;
     height: 0.3rem;
   }
+  .header__lang-item img {
+    width: 1.6875rem;
+    height: 1.25rem;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .header__lang-img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .header__lang-item span {
+    font-size: 0.6rem;
+  }
   .header__lang {
     padding-right: 0.2rem;
     margin-left: 0.037rem;
+    width: 2.6rem;
   }
   .header__email-mobile {
     margin-left: 0.5rem;
@@ -857,83 +921,35 @@ main {
 
 @-webkit-keyframes img-in {
   0% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     opacity: 0;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
   }
   50% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
   }
 }
 
 @keyframes img-in {
   0% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     opacity: 0;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
   }
   50% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
   }
 }
 @-webkit-keyframes img-out {
   0% {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  30% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
   }
   100% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     opacity: 0;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
   }
 }
 @keyframes img-out {
   0% {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  30% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
   }
   100% {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
     opacity: 0;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
   }
 }
 .hero {
@@ -1280,6 +1296,7 @@ main {
   color: #000;
   font-size: 0.875rem;
   font-weight: 700;
+  cursor: pointer;
 }
 .cases__descr {
   grid-column: 11/2 span;
@@ -1307,6 +1324,9 @@ main {
   margin-top: 3rem;
   margin-left: 19rem;
   padding: 1.5rem 5.612rem;
+}
+.cases__btn:hover {
+  color: #000;
 }
 
 .cases__logo-item:hover .cases__logo-bg {
@@ -1797,7 +1817,6 @@ main {
 .connect__label {
   display: block;
   font-size: 0.875rem;
-  margin-bottom: 0.5rem;
 }
 .connect__input {
   width: 100%;
@@ -1808,6 +1827,7 @@ main {
   background: #FFF;
   font-size: 1.125rem;
   color: #747474;
+  margin-top: 0.5rem;
 }
 .connect__textarea {
   width: 100%;
@@ -1819,6 +1839,7 @@ main {
   font-size: 1.125rem;
   color: #747474;
   resize: none;
+  margin-top: 0.5rem;
 }
 .connect__label-checkbox {
   display: -webkit-box;
@@ -1983,5 +2004,71 @@ main {
   }
   .connect__btn {
     padding: 0.62rem 2rem 0.56rem;
+  }
+}
+.modal {
+  background: #4D3F75;
+}
+.modal__callback {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 42.5rem;
+          flex: 0 0 42.5rem;
+  padding: 0;
+  margin-left: 0rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form {
+  position: relative;
+}
+
+.form > .js-validate-error-label {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+}
+
+.form-1 {
+  position: relative;
+}
+
+.form-1 > .js-validate-error-label {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+}
+
+.js-validate-error-label {
+  color: #CA1313;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: -0.8rem;
+}
+
+.connect__checkbox {
+  border: none !important;
+  color: name !important;
+}
+
+@media (max-width: 768px) {
+  .js-validate-error-label {
+    margin-bottom: 0.5rem;
+    margin-top: -0.3rem;
+    font-size: 0.7rem;
+  }
+  .form > .js-validate-error-label {
+    bottom: 2.6rem;
+  }
+  .form-1 > .js-validate-error-label {
+    bottom: 2.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .form > .js-validate-error-label {
+    bottom: 2.1rem;
+  }
+  .form-1 > .js-validate-error-label {
+    bottom: 2.1rem;
   }
 }/*# sourceMappingURL=style.css.map */

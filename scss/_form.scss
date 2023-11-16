@@ -1,0 +1,54 @@
+.form {
+    position: relative;
+}
+.form > .js-validate-error-label {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+}
+.form-1 {
+    position: relative;
+}
+.form-1 > .js-validate-error-label {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+}
+
+
+.js-validate-error-label {
+    color: #CA1313;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: -0.8rem;
+
+}
+
+.connect__checkbox {
+    border: none !important;
+    color: name !important;
+}
+
+@media (max-width: 768px) {
+    .js-validate-error-label {
+        margin-bottom: 0.5rem;
+        margin-top: -0.3rem;
+        font-size: 0.7rem;
+    }
+    .form > .js-validate-error-label {
+        bottom: 2.6rem;
+    }
+    .form-1 > .js-validate-error-label {
+        bottom: 2.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .form > .js-validate-error-label {
+        bottom: 2.1rem;
+    }
+    .form-1 > .js-validate-error-label {
+        bottom: 2.1rem;
+    }
+}

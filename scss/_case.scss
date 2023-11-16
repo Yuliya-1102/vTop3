@@ -84,6 +84,7 @@
         color: #000;
         font-size: 0.875rem; 
         font-weight: 700;
+        cursor: pointer;
     }
 
     &__descr {
@@ -115,6 +116,9 @@
         margin-top: 3rem;
         margin-left: 19rem;
         padding: 1.5rem 5.612rem;
+        &:hover {
+            color: #000;
+        }
     }
 }
 

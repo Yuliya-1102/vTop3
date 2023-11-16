@@ -1,0 +1,9 @@
+.modal {
+    background: $accent-color-1;
+    &__callback {
+        flex: 0 0 42.5rem;
+        padding: 0;
+        margin-left: 0rem;
+        box-shadow: none;
+    }
+}

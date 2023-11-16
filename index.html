@@ -24,9 +24,6 @@
     <header class="header">
         <div class="container main__container">
             <div class="header__top flex">
-                <!-- <div class="header__burger">
-                    <img class="header__burger-img" src="img/burger.svg" alt="burger">
-                </div> -->
 
                 <a href="#" class="header__logo">
                     <div class="header__logo-bg">
@@ -64,11 +61,23 @@
                     
                     <div class="header__lang">
                         <div class="header__lang-main flex">
-                            <span class="header__lang-ru">RU</span>
-                            <div class="header__lang-img">
-                                <img src="img/ru_flag.svg" alt="ru">
-                            </div>
+                            <li class="header__lang-item--main flex">
+                                <span class="header__lang-name--main">RU</span>
+                                <div class="header__lang-img--main header__lang-img">
+                                    <img src="img/ru_flag.svg" alt="ru">
+                                </div>
+                            </li>
                         </div>
+                        <ul class="header__lang-menu">
+                            <li class="header__lang-item header__lang-item--ru">
+                                <span class="header__lang-name header__lang-ru">RU</span>
+                                <img src="img/ru_flag.svg" alt="ru">
+                            </li>
+                            <li class="header__lang-item header__lang-item--by">
+                                <span class="header__lang-name header__lang-by">BY</span>
+                                <img src="img/by_flag.png" alt="by">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -80,10 +89,130 @@
             <nav class="header__nav">
                 <ul class="header__nav-list flex">
                     <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">Все услуги</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение сайтов  (SEO)</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Контексная реклама</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Создание сайтов</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Медийнная реклама</a></li>
+                    <li class="header__nav-item header__nav-active">
+                        <a href="#" class="header__nav-link">Продвижение сайтов  (SEO)</a>
+                        <div class="header__nav-parent">
+                            <ul>
+                                <li><a href="#">Разработка веб-дизайнав</a></li>
+                                <li><a href="#">Разработка баннеров</a></li>
+                                <li><a href="#">Создание логотипов</a></li>
+                                <li><a href="#">Разработка дизайна визиток</a></li>                                
+                                <li><a href="#">Разработка меню</a></li>
+                                <li><a href="#">Разработка дизайна упаковкив</a></li>
+                                <li><a href="#">Разработка дизайна этикетки</a></li>
+                            </ul>                            
+                        </div>
+                    </li>
+                    <li class="header__nav-item header__nav-active">
+                        <a href="#" class="header__nav-link">Контексная реклама</a>
+                        <div class="header__nav-parent">
+                            <ul>
+                                <li class="header__nav-child">
+                                    <a href="#">Разработка веб-дизайнав</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Редизайн сайта</a></li>
+                                        <li><a href="">Разработка дизайна лендинга</a></li>
+                                        <li><a href="">Разработка дизайна корпоративных сайтов</a></li>
+                                        <li><a href="">Разработка дизайна интернет магазина</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Разработка баннеров</a></li>
+                                <li><a href="#">Создание логотипов</a></li>
+                                <li><a href="#">Разработка дизайна визиток</a></li>
+                                <li class="header__nav-child">
+                                    <a href="#">Дизайн сувенирной продукции</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Дизайн шариковых ручек</a></li>
+                                        <li><a href="">Разработка дизайна блокнотов</a></li>
+                                        <li><a href="">Разработка дизайна календарей</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Разработка меню</a></li>
+                                <li><a href="#">Разработка дизайна упаковкив</a></li>
+                                <li><a href="#">Разработка дизайна этикетки</a></li>
+                            </ul>                            
+                        </div>
+                    </li>
+                    <li class="header__nav-item header__nav-active">
+                        <a href="#" class="header__nav-link">Создание сайтов</a>
+                        <div class="header__nav-parent">
+                            <ul>
+                                <li class="header__nav-child">
+                                    <a href="#">Разработка веб-дизайнав</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Редизайн сайта</a></li>
+                                        <li><a href="">Разработка дизайна лендинга</a></li>
+                                        <li><a href="">Разработка дизайна корпоративных сайтов</a></li>
+                                        <li><a href="">Разработка дизайна интернет магазина</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Разработка баннеров</a></li>
+                                <li><a href="#">Создание логотипов</a></li>
+                                <li><a href="#">Разработка дизайна визиток</a></li>
+                                <li class="header__nav-child">
+                                    <a href="#">Дизайн сувенирной продукции</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Дизайн шариковых ручек</a></li>
+                                        <li><a href="">Разработка дизайна блокнотов</a></li>
+                                        <li><a href="">Разработка дизайна календарей</a></li>
+                                     </ul>
+                                </li>
+                                <li><a href="#">Разработка меню</a></li>
+                                <li><a href="#">Разработка дизайна упаковкив</a></li>
+                                <li><a href="#">Разработка дизайна этикетки</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Разработка дизайна листовок</a></li>
+                                <li><a href="#">Дизайн фирменных бланков</a></li>
+                                <li><a href="#">Разработка дизайна буклетов</a></li>
+                                <li><a href="#">Разработка дизайна брошюр</a></li>
+                                <li><a href="#">Разработка дизайна конвертов</a></li>
+                                <li><a href="#">Разработка дизайна презентации</a></li>
+                                <li><a href="#">Дизайн фирменного стиля</a></li>
+                                <li><a href="#">Разработка бренда</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item header__nav-active">
+                        <a href="#" class="header__nav-link">Медийнная реклама</a>
+                        <div class="header__nav-parent">
+                            <ul>
+                                <li class="header__nav-child">
+                                    <a href="#">Разработка веб-дизайнав</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Редизайн сайта</a></li>
+                                        <li><a href="">Разработка дизайна лендинга</a></li>
+                                        <li><a href="">Разработка дизайна корпоративных сайтов</a></li>
+                                        <li><a href="">Разработка дизайна интернет магазина</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Разработка баннеров</a></li>
+                                <li><a href="#">Создание логотипов</a></li>
+                                <li><a href="#">Разработка дизайна визиток</a></li>
+                                <li class="header__nav-child">
+                                    <a href="#">Дизайн сувенирной продукции</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Дизайн шариковых ручек</a></li>
+                                        <li><a href="">Разработка дизайна блокнотов</a></li>
+                                        <li><a href="">Разработка дизайна календарей</a></li>
+                                     </ul>
+                                </li>
+                                <li><a href="#">Разработка меню</a></li>
+                                <li><a href="#">Разработка дизайна упаковкив</a></li>
+                                <li><a href="#">Разработка дизайна этикетки</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Разработка дизайна листовок</a></li>
+                                <li><a href="#">Дизайн фирменных бланков</a></li>
+                                <li><a href="#">Разработка дизайна буклетов</a></li>
+                                <li><a href="#">Разработка дизайна брошюр</a></li>
+                                <li><a href="#">Разработка дизайна конвертов</a></li>
+                                <li><a href="#">Разработка дизайна презентации</a></li>
+                                <li><a href="#">Дизайн фирменного стиля</a></li>
+                                <li><a href="#">Разработка бренда</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="header__nav-item header__nav-active">
                         <a href="#" class="header__nav-link">Разработка дизайна</a>
                         <div class="header__nav-parent">
@@ -124,62 +253,39 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение в соц сетях (SMM)</a></li>
+                    <li class="header__nav-item header__nav-active">
+                        <a href="#" class="header__nav-link">Продвижение в соц сетях (SMM)</a>
+                        <div class="header__nav-parent">
+                            <ul>
+                                <li class="header__nav-child">
+                                    <a href="#">Разработка веб-дизайнав</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Редизайн сайта</a></li>
+                                        <li><a href="">Разработка дизайна лендинга</a></li>
+                                        <li><a href="">Разработка дизайна корпоративных сайтов</a></li>
+                                        <li><a href="">Разработка дизайна интернет магазина</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Разработка дизайна визиток</a></li>
+                                <li class="header__nav-child">
+                                    <a href="#">Дизайн сувенирной продукции</a>
+                                    <ul class="header__nav-dropdown">
+                                        <li><a href="">Дизайн шариковых ручек</a></li>
+                                        <li><a href="">Разработка дизайна блокнотов</a></li>
+                                        <li><a href="">Разработка дизайна календарей</a></li>
+                                     </ul>
+                                </li>
+                                <li><a href="#">Разработка меню</a></li>
+                                <li><a href="#">Разработка дизайна упаковкив</a></li>
+                                <li><a href="#">Разработка дизайна этикетки</a></li>
+                            </ul>
+                            
+                        </div>
+                    </li>
                     <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">О компании</a></li>
                 </ul>
             </nav>
-            <!-- <nav class="header__nav header__nav-mobile">
-                <ul class="header__nav-list flex">
-                    <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">Все услуги</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение сайтов  (SEO)</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Контексная реклама</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Создание сайтов</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Медийнная реклама</a></li>
-                    <li class="header__nav-item header__nav-active">
-                        <a href="#" class="header__nav-link">Разработка дизайна</a>
-                        <div class="header__nav-parent">
-                            <ul>
-                                <li class="header__nav-child">
-                                    <a href="#">Разработка веб-дизайнав</a>
-                                    <ul class="header__nav-dropdown">
-                                        <li><a href="">Редизайн сайта</a></li>
-                                        <li><a href="">Разработка дизайна лендинга</a></li>
-                                        <li><a href="">Разработка дизайна корпоративных сайтов</a></li>
-                                        <li><a href="">Разработка дизайна интернет магазина</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Разработка баннеров</a></li>
-                                <li><a href="#">Создание логотипов</a></li>
-                                <li><a href="#">Разработка дизайна визиток</a></li>
-                                <li class="header__nav-child">
-                                    <a href="#">Дизайн сувенирной продукции</a>
-                                    <ul class="header__nav-dropdown">
-                                        <li><a href="">Дизайн шариковых ручек</a></li>
-                                        <li><a href="">Разработка дизайна блокнотов</a></li>
-                                        <li><a href="">Разработка дизайна календарей</a></li>
-                                     </ul>
-                                </li>
-                                <li><a href="#">Разработка меню</a></li>
-                                <li><a href="#">Разработка дизайна упаковкив</a></li>
-                                <li><a href="#">Разработка дизайна этикетки</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">Разработка дизайна листовок</a></li>
-                                <li><a href="#">Дизайн фирменных бланков</a></li>
-                                <li><a href="#">Разработка дизайна буклетов</a></li>
-                                <li><a href="#">Разработка дизайна брошюр</a></li>
-                                <li><a href="#">Разработка дизайна конвертов</a></li>
-                                <li><a href="#">Разработка дизайна презентации</a></li>
-                                <li><a href="#">Дизайн фирменного стиля</a></li>
-                                <li><a href="#">Разработка бренда</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link">Продвижение в соц сетях (SMM)</a></li>
-                    <li class="header__nav-item"><a href="#" class="header__nav-link link__decoration">О компании</a></li>
-                </ul>
-            </nav> -->
-
+            
             <div id="dl-menu" class="dl-menuwrapper">
                 <button class="dl-menuwrapper__btn">Открыть меню</button>
                 <ul class="dl-menu">
@@ -405,80 +511,80 @@
                 <div class="cases__wrapper">
                     <div class="cases__logo">
                         <div class="cases__logo-grid">
-                            <div class="cases__logo-item">
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-1.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО» </p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-2.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа комбинта школьного питания г. Минска</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-2-1.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО» </p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-4.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-3.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-7.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-5.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-6.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-8.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-9.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-10.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
-                            <div class="cases__logo-item">
+                            </a>
+                            <a href="#" class="cases__logo-item">
                                 <img class="cases__logo-img" src="img/logo-6.jpg" alt="logo">
                                 <div class="cases__logo-bg">
                                     <p class="cases__logo-text">Разработка логотипа для ООО «ПОЛСПО»</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        <button class="main-btn main-btn__text cases__btn">Смотреть еще</button>
+                        <a href="#" class="main-btn main-btn__text cases__btn">Смотреть еще</a>
                     </div>
                     
                     <div class="cases__descr">
@@ -490,7 +596,7 @@
                             <h3 class="cases__descr-title">и смогли заработать более</h3>
                             <p class="cases__descr-text"><span class="cases__descr-color">9 МЛРД.</span> РУБЛЕЙ</p>
                         </div>
-                        <button class="main-btn main-btn__text cases__descr-btn">Хочу заработать</button>
+                        <button class="main-btn main-btn__text cases__descr-btn" data-fancybox href="#hidden">Хочу заработать</button>
                     </div>
                 </div>
             </div>
@@ -530,17 +636,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="process__img">
-                    <img src="img/process.png" alt="process">
-                </div> -->
-                <a href="https://youtu.be/qKXvYhIFQAY?si=Pr_Q14R7FLCnH47M" class="process__video process--third" data-fancybox="video">
-                    <img loading="lazy" src="img/process.png" alt="">
-                    <div class="process__play flex">
-                        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.89401 0.378465C1.63026 -0.352273 0.598633 0.249511 0.598633 1.71099V12.5087C0.598633 13.9702 1.63026 14.572 2.90261 13.8412L12.342 8.42518C13.6144 7.69444 13.6144 6.51666 12.342 5.78592L2.89401 0.378465Z" />
-                        </svg>
-                    </div>
+
+                <a href="videos/forest-1.webm"  data-fancybox="video">
+                    <video autoplay muted loop preload="auto" class="full-screen__video process__video">
+                        <source type="video/webm" src="videos/forest-1.webm">
+                        <source type="video/mp4" src="videos/forest-1.mp4">
+                    </video>
                 </a>
+
             </div>
         </section>
 
@@ -554,26 +657,48 @@
                     </div>
 
                     <div class="connect__callback">
-                        <h2 class="connect__callback-title">Будем рады помочь</h2>
-                        <form class="connect__form" action="#" method="post">
-                            <label class="connect__label">Ваше имя</label>
-                            <input class="connect__input" type="text" name="name">
-                            <label class="connect__label">Телефон</label>
-                            <input class="connect__input" type="tel" name="phone">
-                            <label class="connect__label">Комментарий</label>
-                            <textarea class="connect__textarea"></textarea>
-                            <label for="agree" class="connect__label-checkbox">
-                                <input class="connect__checkbox" type="checkbox" id="agree" required name="checkbox" checked><span></span>
+                        <p class="connect__callback-title">Будем рады помочь</p>
+                        <form class="form connect__form" action="mail.php" method="POST">
+                            <label class="connect__label">Ваше имя
+                            <input id="name" class="connect__input input-name" type="text" name="name" data-validate-field="name" pattern="[а-я]/qi" title="Только буквы"></label>
+                            <label class="connect__label">Телефон
+                            <input class="connect__input input-tel" type="tel" name="phone" data-validate-field="tel"></label>
+                            <label class="connect__label">Комментарий
+                            <textarea class="connect__textarea"></textarea></label>
+                            <label  class="connect__label connect__label-checkbox">
+                                <input class="connect__checkbox" type="checkbox" id="agree" required name="checkbox" checked data-validate-field="checkbox">
+                                <span></span>
                                 <p>Нажимая кнопку отправить заявку, даю согласие на обработку <a href="https://vtop-3.ru/privacy-policy" class="connect__checkbox-link">персональных данных*</a></p>
                             </label>
-                            <button class="main-btn main-btn__text connect__btn">Отправить заявку</button>
+                            
+                            <button id="submit-btn" class="main-btn main-btn__text connect__btn">Отправить заявку</button>
                         </form>
+                        
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
+
+    <div class="modal" style="display: none; width: 500px;" id="hidden">
+        <div class="connect__callback modal__callback">
+            <p class="connect__callback-title">Будем рады помочь</p>
+            <form class="connect__form form-1" action="#" method="post">
+                <label class="connect__label">Ваше имя
+                <input class="connect__input" type="text" name="name" data-validate-field="name" pattern="[а-я]/qi" title="Только буквы"></label>
+                <label class="connect__label">Телефон
+                <input class="connect__input" type="tel" name="phone" data-validate-field="tel"></label>
+                <label class="connect__label">Комментарий</label>
+                <textarea class="connect__textarea"></textarea>
+                <label for="agree-1" class="connect__label-checkbox">
+                    <input class="connect__checkbox" type="checkbox" id="agree-1" required name="checkbox" checked data-validate-field="checkbox"><span></span>
+                    <p>Нажимая кнопку отправить заявку, даю согласие на обработку <a href="https://vtop-3.ru/privacy-policy" class="connect__checkbox-link">персональных данных*</a></p>
+                </label>
+                <button class="main-btn main-btn__text connect__btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -590,6 +715,8 @@
         });
     </script>
 
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>

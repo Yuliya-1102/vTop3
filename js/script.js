@@ -6,16 +6,7 @@ var swiper = new Swiper(".process__swiper", {
         
     },
     loop: true,
-    autoHeight: true,
-    breakpoints: {
-		576: {
-			autoHeight: true,
-		},
-        600: {
-			autoHeight: false,
-		}
-
-	},
+    autoHeight: false,
 });
 
 // animation
@@ -58,15 +49,6 @@ initImg('#test img', [
     }
   }
 
-  // burger
-  // const headerBurger = document.querySelector('.header__burger');
-  // const headerNav = document.querySelector('.header__nav-mobile');
-  // console.log('headerNav: ', headerNav);
-  
-  // headerBurger.addEventListener('click', () =>{
-  //     headerNav.classList.toggle('burger--active');
-  // })
-
   // menu
   const dlClose = document.querySelectorAll('.dl-close');
   const menuwrapper = document.querySelector('.dl-menu');
@@ -81,7 +63,53 @@ initImg('#test img', [
     })
   })
 
+// change language
+const headerLangItem = document.querySelectorAll('.header__lang-item');
+const langNameMain = document.querySelector('.header__lang-name--main');
+const langImgMain = document.querySelector('.header__lang-img--main img');
 
-  // his.$menu.removeClass( 'dl-menuopen' );
-  // this.$menu.addClass( 'dl-menu-toggle' );
-  // this.$trigger.removeClass( 'dl-active' );
+headerLangItem.forEach(item => {
+  item.addEventListener('click', (event) => {
+    let target = event.target;
+    langNameMain.textContent = target.parentNode.textContent;
+    langImgMain.setAttribute('src', target.parentNode.lastElementChild.attributes.src.nodeValue);
+  })
+})
+
+
+
+//mask
+let selector = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('+375 (99) 999-99-99');
+im.mask(selector);
+
+// validation
+let validateForms = function(selector, rules, yaGoal) {
+	new window.JustValidate(selector, {
+		rules: rules,
+		submitHandler: function(form) {
+			let formData = new FormData(form);
+
+			let xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						console.log('Отправлено');
+					}
+				}
+			}
+
+			xhr.open('POST', 'mail.php', true);
+			xhr.send(formData);
+
+			form.reset();
+
+		}
+	});
+}
+validateForms('.form', { tel: {required: true}, name: {required: true}, checkbox: { required: true}}, 'send goal');
+
+validateForms('.form-1', { tel: {required: true}, name: {required: true}, checkbox: { required: true}}, 'send goal');
+
+

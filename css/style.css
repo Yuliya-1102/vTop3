@@ -1678,6 +1678,7 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-right: -0.67rem;
   }
   .process__wrapper {
     width: 23rem;

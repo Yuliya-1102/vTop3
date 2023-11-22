@@ -589,11 +589,11 @@
                     
                     <div class="cases__descr">
                         <div class="cases__descr-item">
-                            <h3 class="cases__descr-title">Наши клиенты получили более</h3>
+                            <p class="cases__descr-title">Наши клиенты получили более</p>
                             <p class="cases__descr-text"><span class="cases__descr-color">1 МЛН.</span> ЗАЯВОК</p>
                         </div>
                         <div class="cases__descr-item">
-                            <h3 class="cases__descr-title">и смогли заработать более</h3>
+                            <p class="cases__descr-title">и смогли заработать более</p>
                             <p class="cases__descr-text"><span class="cases__descr-color">9 МЛРД.</span> РУБЛЕЙ</p>
                         </div>
                         <button class="main-btn main-btn__text cases__descr-btn" data-fancybox href="#hidden">Хочу заработать</button>
@@ -637,12 +637,6 @@
                     </div>
                 </div>
 
-                <!-- <a href="videos/forest-1.webm"  data-fancybox="video">
-                    <video autoplay muted loop preload="auto" class="full-screen__video process__video">
-                        <source type="video/webm" src="videos/forest-1.webm">
-                        <source type="video/mp4" src="videos/forest-1.mp4">
-                    </video>
-                </a> -->
                 <video autoplay muted loop playsinline webkit-playinginline preload="auto" class="full-screen__video process__video">
                     <source type='video/webm; codecs="vp8, vorbis"' src="videos/forest-1.webm">
                     <source type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' src="videos/forest-1.mp4" >
@@ -684,16 +678,15 @@
 
     </main>
 
-    <div class="modal" style="display: none; width: 500px;" id="hidden">
+    <div class="modal" style="display: none; width: 300px;" id="hidden">
         <div class="connect__callback modal__callback">
-            <p class="connect__callback-title">Будем рады помочь</p>
+            <p class="connect__callback-title">Будем рады помочь!</p>
             <form class="connect__form form-1" action="#" method="post">
                 <label class="connect__label">Ваше имя
-                <input class="connect__input" type="text" name="name" data-validate-field="name" pattern="[а-я]/qi" title="Только буквы"></label>
+                <input class="connect__input" type="text" name="name" data-validate-field="name" pattern="[а-я]/qi" title="Только буквы" placeholder="Введите имя"></label>
                 <label class="connect__label">Телефон
-                <input class="connect__input" type="tel" name="phone" data-validate-field="tel"></label>
-                <label class="connect__label">Комментарий</label>
-                <textarea class="connect__textarea"></textarea>
+                <input class="connect__input" type="tel" name="phone" data-validate-field="tel" placeholder="Введите телефон"></label>
+               
                 <label for="agree-1" class="connect__label-checkbox">
                     <input class="connect__checkbox" type="checkbox" id="agree-1" required name="checkbox" checked data-validate-field="checkbox"><span></span>
                     <p>Нажимая кнопку отправить заявку, даю согласие на обработку <a href="https://vtop-3.ru/privacy-policy" class="connect__checkbox-link">персональных данных*</a></p>

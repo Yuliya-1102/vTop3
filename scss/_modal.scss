@@ -1,9 +1,56 @@
 .modal {
     background: $accent-color-1;
+    border-radius: 10px;
     &__callback {
         flex: 0 0 42.5rem;
         padding: 0;
         margin-left: 0rem;
         box-shadow: none;
     }
+    .connect__form {
+        margin-left: 0;
+    }
+    &.fancybox-content {
+        padding: 43px 30px 40px;
+    }
+    .connect__callback-title {
+        text-align: center;
+        font-size: 20px; 
+        margin-bottom: 26.93px;
+    }
+    .connect__label {
+        font-size: 14px; 
+    }
+    .connect__input {
+        width: 100%;
+        height: auto;
+        padding: 11px 20px;
+        margin-bottom: 12px;
+        border-radius: 50px; 
+        background: #FFF;
+        font-size: 14px;
+        color: #747474;
+        margin-top: 0.5rem;
+    }
+    .connect__label-checkbox {
+        font-size: 12px;
+    }
+    .connect__btn {
+        padding: 24px 40px;
+        font-size: 18px; 
+    }
+    .form-1 > .js-validate-error-label {
+        bottom: 67px;
+    }
+    .connect__label-checkbox span {
+        width: 24px;
+        height: 24px; 
+        border-radius: 4px;
+        margin-right: 9px;
+    }
+
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    padding: 4px !important;
 }

@@ -78,9 +78,10 @@
         }
     }
     &__lang-name {
-        color: #D2D2D2;
-        font-family: Raleway;
-        font-size: 0.875rem;
+        color: #fff;
+        font-family: Yantramanav;
+        font-size: 1.4rem;
+        font-weight: 300;
     }
     &__lang-main {
         align-items: center;
@@ -89,19 +90,22 @@
         width: 1.875rem;
         height: 1.875rem; 
     }
+    &__lang-by {
+        margin-right: 0.2rem;
+
+    }
     &__lang-menu {
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        top: 94%;
-        left: -0.8rem;
+        top: 79%;
+        left: -1.67rem;
         background: #4d3f75;
         z-index: 1000;
         list-style-type: none;
-        padding: 1rem;
-        min-width: 80px;
         border-radius: 5px;
         box-shadow: 2px 2px 1px 0px #4d3f75;
+        padding: 1.5rem 1rem 0.5rem;
         
     }
     &__lang-item--main {
@@ -111,18 +115,23 @@
     
     &__lang-item {
         display: flex;
-        align-items: center;
-        margin-bottom: 0.3rem;
+        align-items: flex-end;
+        margin-bottom: 0.5rem;
         cursor: pointer;
         &:hover .header__lang-name {
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
             -webkit-text-stroke: 1px white;
         }
+        &:last-child {
+            margin-bottom: 0;
+        }
         img {
-            width: 1.875rem;
-            height: 1.875rem;
             margin-left: 0.5rem;
-            object-fit: contain;
+            width: 2.375rem;
+            height: auto;
+            object-fit: cover;
+
+  
         }
     }
     &__phone-link, &__email-link, &__lang-img {
@@ -318,6 +327,9 @@
         &__lang {
             margin-left: 1.037rem;
         }
+        &__lang-menu {
+            top: 98%;
+        }
         &__email-mobile {
             margin-left: 0.81rem;
         }
@@ -444,21 +456,28 @@
         } 
         &__lang-menu {
             padding: 0.4rem;
+            left: -1.47rem;
         }
         &__lang::after {
             width: 0.3rem;
             height: 0.3rem;
         }
+        &__lang-item {
+            margin-bottom: 0.2rem;
+            &:last-child{
+                margin-bottom: 0rem;
+            }
+        }
         &__lang-item img{
             width: 1.6875rem;
-            height: 1.25rem;
+            height: auto;
             object-position: left;
         }
         &__lang-img img{
             object-fit: contain;
         }
         &__lang-item span{
-            font-size: 0.6rem;
+            font-size: 0.8rem;
         }
         &__lang {
             padding-right: 0.2rem;
@@ -648,3 +667,8 @@
 
 }
 
+@media (max-width:576px) {
+    .dl-menuwrapper {
+        width: 85%;
+    }
+}

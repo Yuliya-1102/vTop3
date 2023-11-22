@@ -1930,7 +1930,7 @@ main {
 
 .connect__label-checkbox input:checked + span {
   background: url("../img/check.png") center no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 @media (max-width: 768px) {
@@ -2110,7 +2110,7 @@ main {
   }
 }
 .modal {
-  background: #4D3F75;
+  background: url("../img/bg_form.svg") center no-repeat;
   border-radius: 10px;
 }
 .modal__callback {
@@ -2160,7 +2160,7 @@ main {
 .modal .connect__label-checkbox span {
   width: 24px;
   height: 24px;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-right: 9px;
 }
 

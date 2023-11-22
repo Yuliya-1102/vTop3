@@ -119,7 +119,8 @@
 }
 .connect__label-checkbox input:checked + span{
     background: url('../img/check.png') center no-repeat;
-    background-size: cover;
+    // background-size: cover;
+    background-size: auto;
 }
 
 @media (max-width:768px) {

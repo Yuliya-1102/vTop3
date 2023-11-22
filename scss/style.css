@@ -2145,7 +2145,7 @@ main {
   background: #FFF;
   font-size: 14px;
   color: #747474;
-  margin-top: 0.5rem;
+  margin-top: 6px;
 }
 .modal .connect__label-checkbox {
   font-size: 12px;
@@ -2157,7 +2157,7 @@ main {
   font-size: 18px;
 }
 .modal .form-1 > .js-validate-error-label {
-  bottom: 67px;
+  bottom: 58px;
 }
 .modal .connect__label-checkbox span {
   width: 24px;
@@ -2165,13 +2165,13 @@ main {
   border-radius: 5px;
   margin-right: 9px;
 }
+.modal .js-validate-error-label {
+  font-size: 13px;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
 
 .fancybox-slide--html .fancybox-close-small {
   padding: 4px !important;
-}
-
-@media (max-width: 576px) {
-  .fancybox-slide--html .fancybox-close-small {
-    margin-top: 10px;
-  }
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */

@@ -31,7 +31,7 @@
         background: #FFF;
         font-size: 14px;
         color: #747474;
-        margin-top: 0.5rem;
+        margin-top: 6px;
     }
     .connect__label-checkbox {
         font-size: 12px;
@@ -43,7 +43,7 @@
         font-size: 18px; 
     }
     .form-1 > .js-validate-error-label {
-        bottom: 67px;
+        bottom: 58px;
     }
     .connect__label-checkbox span {
         width: 24px;
@@ -51,15 +51,20 @@
         border-radius: 5px;
         margin-right: 9px;
     }
-
+    .js-validate-error-label {
+        font-size: 13px;
+        margin-bottom: 15px;
+        margin-top: -10px;
+    }
 }
 
 .fancybox-slide--html .fancybox-close-small {
     padding: 4px !important;
+    margin-top: 16px;
 }
 
-@media (max-width: 576px) {
-    .fancybox-slide--html .fancybox-close-small {
-        margin-top: 10px;
-    }
-}
+// @media (max-width: 576px) {
+//     .fancybox-slide--html .fancybox-close-small {
+//         margin-top: 16px;
+//     }
+// }

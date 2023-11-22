@@ -2149,6 +2149,8 @@ main {
 }
 .modal .connect__label-checkbox {
   font-size: 12px;
+  margin-left: 0;
+  margin-bottom: 20px;
 }
 .modal .connect__btn {
   padding: 24px 40px;
@@ -2166,4 +2168,10 @@ main {
 
 .fancybox-slide--html .fancybox-close-small {
   padding: 4px !important;
+}
+
+@media (max-width: 576px) {
+  .fancybox-slide--html .fancybox-close-small {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
